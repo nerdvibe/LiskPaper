@@ -27,9 +27,6 @@ class Head extends Component {
                 <Link to="/how-it-works" className="navbar-item">
                   What is a paper wallet?
                 </Link>
-                <Link to="/how-it-works" className="navbar-item">
-                  Ideas for paper wallets
-                </Link>
                 <span className="navbar-item">
                   <Offline>
                     <p className="has-text-success">
