@@ -55,8 +55,8 @@ class How extends Component {
                 to contact carbonara on the Lisk.chat.
               </p>
               <p>
-                The safest way to generate a wallet is to download the
-                application here, transfer it into an usb drive, start an
+                The safest way to generate a wallet is  <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0">to download the
+                application here</a>, transfer it into an usb drive, start an
                 offline linux distribution, and open the index.html.
               </p>
               <p>
