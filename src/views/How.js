@@ -50,7 +50,7 @@ class How extends Component {
                 How do I generate the paper wallet offline?
               </h2>
               <p>
-                The code of liskpaper.com is opensource. You can improve it and
+                The code of <a href="https://liskpaper.com">liskpaper.com</a> is open source. You can improve it and
                 submit a PR to the repository. If you need assistance, feel free
                 to contact carbonara on the Lisk.chat.
               </p>
@@ -61,8 +61,10 @@ class How extends Component {
               </p>
               <p>
                 If you don't want to bother to use an offline linux
-                distribution, you can just download liskpaper from here and
-                execute the index.html
+                distribution, you can just download{" "}
+                <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0">liskpaper.zip
+                  from here</a>, unzip it and execute the index.html. There is no need
+                to be connected to internet while running the liskpaper app.
               </p>
             </div>
           </div>
