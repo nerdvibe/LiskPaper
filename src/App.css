@@ -20,6 +20,11 @@
   margin-top: 35px;
 }
 
+.underlined {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media print {
   .hide-print {
     display: none;
