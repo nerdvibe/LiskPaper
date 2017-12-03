@@ -1,7 +1,7 @@
 # LiskPaper
 ###  A paper wallet creator for Lisk
 
-![liskpaper-logo](https://liskpaper.com/paperWalletMeta.png)
+![liskpaper-logo](https://github.com/xunga/LiskPaper/blob/master/public/paperWalletMeta.png?raw=true)
 
 ### Create your Lisk paper wallet offline in 2 easy steps
 
