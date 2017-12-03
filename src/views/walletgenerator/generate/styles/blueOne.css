@@ -1,0 +1,171 @@
+
+/* blueOne */
+
+.blueOne .image {
+    transform: scale(0.7);
+}
+
+.blueOne .text-over-address {
+    bottom: 240px;
+    left: 271px;
+}
+
+.blueOne .text-over-passphrase {
+    bottom: 122px;
+    left: 271px;
+    line-height: 1.2;
+    max-width: 775px;
+    text-align: left;
+}
+.blueOne .text-over-message {
+    bottom: 33px;
+    left: 269px;
+    line-height: 1.2;
+    max-width: 775px;
+    text-align: left;
+}
+
+.blueOne .qr-code {
+    height: 128px;
+    width: 128px;
+    bottom: 92px;
+    left: 41px;
+}
+
+.blueOne canvas {
+    height: 152px!important;
+    width: 152px!important;
+}
+
+@media print {
+    /*.blueOne */
+    .blueOne .image {
+        top:100px;
+        position: relative;
+        /*width: 100%; !* for IE 6 *!*/
+    }
+
+    .blueOne .text-over-address {
+        bottom: 129px;
+        left: 141px;
+        font-size: 15px!important;
+    }
+
+    .blueOne .text-over-passphrase {
+        bottom: 64px;
+        left: 142px;
+        font-size: 15px!important;
+        max-width: 504px;
+    }
+
+    .blueOne .text-over-message {
+        bottom: 17px;
+        left: 142px;
+        font-size: 15px!important;
+        max-width: 504px;
+    }
+
+    .blueOne .qr-code {
+        bottom: 41px;
+        left: 22px;
+        height: 77px;
+        width: 77px;
+    }
+    .blueOne canvas {
+        height: 80px!important;
+        width: 80px!important;
+    }
+
+    .blueOne .notification {
+        transform: scale(.8);
+    }
+    .blueOne .notification-topped {
+        margin-top: 60px;
+        margin-bottom: 0px!important;
+    }
+    .blueOne .extra-details {
+        margin-top: -78px;
+    }
+}
+
+@media (max-width: 1408px) and (min-width: 1216px) {
+    .blueOne .image {
+        position: relative;
+        transform: scale(0.7);
+    }
+
+    .blueOne .text-over-address {
+        bottom: 204px;
+        left: 232px;
+    }
+
+    .blueOne .text-over-passphrase {
+        bottom: 103px;
+        left: 233px;
+        line-height: 1.2;
+        max-width: 775px;
+        text-align: left;
+    }
+    .blueOne .text-over-message {
+        bottom: 27px;
+        left: 238px;
+        line-height: 1.2;
+        max-width: 775px;
+        text-align: left;
+    }
+
+    .blueOne canvas {
+        height: 124px!important;
+        width: 124px!important;
+    }
+
+    .blueOne .qr-code {
+        height: 124px!important;
+        width: 124px!important;
+        bottom: 60px;
+        left: 35px;
+    }
+}
+
+@media (max-width: 1215px) and (min-width: 1024px) {
+    .blueOne .image {
+        position: relative;
+        transform: scale(0.7);
+    }
+
+    .blueOne .text-over-address {
+        bottom: 168px;
+        left: 193px;
+    }
+
+    .blueOne .text-over-passphrase {
+        bottom: 82px;
+        left: 193px;
+        line-height: 1.2;
+        text-align: left;
+        font-size: 22px!important;
+        max-width: 565px;
+    }
+    .blueOne .text-over-message {
+        bottom: 20px;
+        left: 193px;
+        line-height: 1.2;
+        max-width: 775px;
+        text-align: left;
+        font-size: 22px!important;
+    }
+
+    .blueOne canvas {
+        height: 90px!important;
+        width: 90px!important;
+    }
+
+    .blueOne .qr-code {
+        bottom: 58px;
+        left: 36px;
+        width: 90px!important;
+        height: 90px!important;
+    }
+}
+
+/*end blueOne*/
