@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Footer extends Component {
   render() {
@@ -14,9 +14,14 @@ class Footer extends Component {
               carbonara
             </a>{" "}
             and{" "}
-            <a href="http://liskelite.com" className="footer-link">
-              Lisk Elite
-            </a>. <span className="hide-print">Vote Lisk Elite to earn the biggest rewards weekly.</span>
+            {window && window.process && !window.process.type
+              ? <a href="http://liskelite.com" className="footer-link">
+                  Lisk Elite
+                </a>
+              : <strong>Lisk Elite</strong>}.{" "}
+            <span className="hide-print">
+              Vote Lisk Elite to earn the biggest rewards weekly.
+            </span>
           </p>
         </div>
       </nav>
@@ -25,6 +30,3 @@ class Footer extends Component {
 }
 
 export default Footer;
-
-
-
