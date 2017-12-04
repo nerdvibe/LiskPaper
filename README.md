@@ -5,6 +5,10 @@
 
 ### Create your Lisk paper wallet offline in 2 easy steps
 
+## How to use
+Liskpaper works on browser via [liskpaper.com](https://liskpaper.com) and natively offline on Mac, Linux or Windows. [Here you can find the downloadable version of liskpaper](https://github.com/xunga/LiskPaper/releases/tag/1.0.0).
+
+
 ## What is a paper wallet?
 
 One of the most exciting things you can do with your Lisk is to send them to a piece of paper.
@@ -27,10 +31,10 @@ Another use case of a paper wallet is to gift it to friends for example for Chri
 The code of [liskpaper.com](https://liskpaper.com) is open source. You can improve it and submit a PR to the repository. If you need assistance, feel free to contact carbonara on the Lisk.chat.
 
 
-The safest way to generate a wallet is to [download the application here](https://github.com/xunga/LiskPaper/releases/tag/1.0), transfer it into an usb drive, start an offline linux distribution, and open the index.html.
+The safest way to generate a wallet is to [download the application here](https://github.com/xunga/LiskPaper/releases/tag/1.0.0), transfer it into an usb drive, start an offline linux distribution, and open the index.html.
 
 
-If you don't want to bother to use an offline linux distribution, you can just download [liskpaper.zip from here](https://github.com/xunga/LiskPaper/releases/tag/1.0), unzip it and execute the index.html. There is no need to be connected to internet while running the liskpaper app.
+If you don't want to bother to use an offline linux distribution, you can just download [liskpaper.zip from here](https://github.com/xunga/LiskPaper/releases/tag/1.0.0), unzip it and execute the index.html. There is no need to be connected to internet while running the liskpaper app.
 
 ## Disclaimer
 

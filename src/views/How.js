@@ -55,14 +55,14 @@ class How extends Component {
                 to contact carbonara on the Lisk.chat.
               </p>
               <p>
-                The safest way to generate a wallet is  <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0" className="underlined">to download the
+                The safest way to generate a wallet is  <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0" className="underlined">to download the
                 application here</a>, transfer it into an usb drive, start an
                 offline linux distribution, and open the index.html.
               </p>
               <p>
                 If you don't want to bother to use an offline linux
                 distribution, you can just download{" "}
-                <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0" className="underlined">liskpaper.zip
+                <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0" className="underlined">liskpaper.zip
                   from here</a>, unzip it and execute the index.html. There is no need
                 to be connected to internet while running the liskpaper app.
               </p>
