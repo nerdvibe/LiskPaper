@@ -33,11 +33,15 @@ class Head extends Component {
                       <strong>Offline</strong>
                     </p>
                   </Offline>
-                  <Online>
-                    <Link to="#" className="button is-info is-inverted">
-                      <span>Download and use it offline</span>
-                    </Link>
-                  </Online>
+                  {!window && window.process && window.process.type
+                    ? <Online>
+                        <Link to="#" className="button is-info is-inverted">
+                          <span>Download and use it offline</span>
+                        </Link>
+                      </Online>
+                    : <p className="has-text-success">
+                        <strong>Online</strong>
+                      </p>}
                 </span>
               </div>
             </div>

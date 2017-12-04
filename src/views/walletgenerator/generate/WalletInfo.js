@@ -7,60 +7,11 @@ import AnimationsWrapper from "../../../lib/AnimationWrapper";
 import { parse } from "qs";
 
 import { generateWallet } from "../../../logic/wallets";
-import * as images from "./styles/index";
+// import * as images from "./styles/index";
 
 import "./styles/index";
 
-const themes = {
-  paperLightBlue: {
-    label: "Paper Light Blue",
-    image: images.paperLightBlue,
-    style: "baseWallet",
-    message_length: 88
-  },
-  christmasOne: {
-    label: "Christmas Gift",
-    image: images.christmasOne,
-    style: "christmasOne",
-    message_length: 59
-  },
-  paperChristmas: {
-    label: "Paper Christmas",
-    image: images.paperChristmas,
-    style: "baseWallet",
-    message_length: 88
-  },
-  christmasTree: {
-    label: "Christmas Tree",
-    image: images.christmasTree,
-    style: "christmasTree",
-    message_length: 88
-  },
-  veryLightBlue: {
-    label: "Very Light Blue",
-    image: images.veryLightBlue,
-    style: "baseWallet",
-    message_length: 88
-  },
-  PaperDarkBlue: {
-    label: "Paper Dark Blue",
-    image: images.PaperDarkBlue,
-    style: "baseWallet",
-    message_length: 88
-  },
-  blueNet: {
-    label: "Blue Net",
-    image: images.blueNet,
-    style: "baseWallet",
-    message_length: 88
-  },
-  blueOne: {
-    label: "Blue Standard",
-    image: images.blueOne,
-    style: "blueOne",
-    message_length: 52
-  }
-};
+import themes from "./styles/index";
 
 class WalletInfo extends Component {
   query = {};
