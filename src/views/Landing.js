@@ -26,13 +26,13 @@ class App extends Component {
           {window && window.process && window.process.type
             ? ""
             : <Online>
-                <Link
-                  to="https://github.com/xunga/LiskPaper/releases/tag/1.0"
+                <a
+                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0"
                   className="button is-primary"
                 >
                   <i className="fa fa-download fa-fw" aria-hidden="true" />{" "}
                   Download offline version
-                </Link>
+                </a>
               </Online>}
         </AnimationsWrapper>
       </div>

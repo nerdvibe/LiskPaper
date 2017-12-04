@@ -5,9 +5,9 @@
 
 ### Create your Lisk paper wallet offline in 2 easy steps
 
+
 ## How to use
 Liskpaper works on browser via [liskpaper.com](https://liskpaper.com) and natively offline on Mac, Linux or Windows. [Here you can find the downloadable version of liskpaper](https://github.com/xunga/LiskPaper/releases/tag/1.0.0).
-
 
 ## What is a paper wallet?
 
