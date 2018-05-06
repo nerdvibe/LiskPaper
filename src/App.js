@@ -6,8 +6,8 @@ import "./App.css";
 import Head from "./modules/base-ui/Header";
 import Footer from "./modules/base-ui/Footer";
 import Landing from "./modules/base-ui/Landing";
-import Wizard from "./modules/walletgenerator/views/Wizard";
-import WalletInfo from "./modules/walletgenerator/views/generate/WalletInfo";
+import Wizard from "./modules/walletGenerator/views/Wizard";
+import WalletInfo from "./modules/walletGenerator/views/generate/WalletInfo";
 import How from "./modules/howPage/How";
 import "font-awesome/css/font-awesome.min.css";
 
