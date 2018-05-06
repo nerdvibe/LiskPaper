@@ -8,8 +8,8 @@ class Wizard extends Component {
       <div className="container has-text-centered">
         <AnimationsWrapper>
           <p className="title">
-            All right! Let&apos;s create a paper wallet. <br />How do do you want to
-            create a paper wallet?
+            All right! Let&apos;s create a paper wallet. <br />How do do you
+            want to create a paper wallet?
           </p>
           <Link to="/create-wallet" className="button is-success">
             Generate one from scratch
