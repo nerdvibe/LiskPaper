@@ -1,0 +1,25 @@
+.byte {
+  display: inline-block;
+  text-align: center;
+  font-size: 140%;
+  margin: 5px;
+  font-family: monospace;
+  transition: all ease 300ms;
+}
+
+.stable {
+  transform: scale(1);
+  display: inline-block;
+  transition: all ease 300ms;
+}
+
+.bouncing {
+  transform: scale(1.2);
+}
+
+.title-seed-message {
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+/*end passphrase*/
