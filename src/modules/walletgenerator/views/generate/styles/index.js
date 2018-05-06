@@ -4,10 +4,6 @@ import "./christmasOne.css";
 import "./baseWallet.css";
 import "./paperChristmas.css";
 import "./christmasTree.css";
-
-// Electron fucks up if the images are imported :/ so encoding them in base64
-
-
 // export { default as christmasOne } from "./christmasOne.png";
 // export { default as blueOne } from "./blueOne.png";
 // export { default as blueNet } from "./blueNet.png";
@@ -16,6 +12,11 @@ import "./christmasTree.css";
 // export { default as paperLightBlue } from "./paperLightBlue.png";
 // export { default as veryLightBlue } from "./veryLightBlue.png";
 // export { default as PaperDarkBlue } from "./paperDarkBlue.png";
+
+// You are probably wondering, what is this mess in this file...
+// The backgrounds of the paper wallets have to be base 64encoded, instead of importing them right away.
+// The reason behind this is that Electron messes up if the images are imported :/ so encoding them in base64
+// Vote carbonara for the creativity ;)
 
 export default {
 
