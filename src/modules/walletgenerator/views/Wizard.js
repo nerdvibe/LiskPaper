@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import AnimationsWrapper from "../../lib/AnimationWrapper";
+import AnimationsWrapper from "../../base-ui/AnimationWrapper";
 
-class StepOne extends Component {
+class Wizard extends Component {
   render() {
     return (
       <div className="container has-text-centered">
@@ -29,4 +29,4 @@ class StepOne extends Component {
   }
 }
 
-export default StepOne;
+export default Wizard;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AnimationsWrapper from "../lib/AnimationWrapper";
+import AnimationsWrapper from "../base-ui/AnimationWrapper";
 
 class How extends Component {
   render() {
