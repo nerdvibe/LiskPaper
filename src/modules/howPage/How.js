@@ -41,8 +41,8 @@ class How extends Component {
               </p>
               <p>
                 Another use case of a paper wallet is to gift it to friends for
-                example for Christmas. Let's say you want to give 10 Lisk to
-                John, but John doesn't know how to create a Lisk wallet. You
+                example for Christmas. Let&apos;s say you want to give 10 Lisk to
+                John, but John doesn&apos;t know how to create a Lisk wallet. You
                 could create a Lisk Paper Wallet for John, send some Lisk to the
                 generated address and then gift the paper wallet to him.
               </p>
@@ -69,7 +69,7 @@ class How extends Component {
                 distribution, and open the index.html.
               </p>
               <p>
-                If you don't want to bother to use an offline linux
+                If you don&apos;t want to bother to use an offline linux
                 distribution, you can just download{" "}
                 <a
                   href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
