@@ -1,8 +1,7 @@
-import "./baseWallets.css";
-// import "./blueOne.css";
+import "./base.css";
+// import "./blueOne.css"; <- Is deprecated
 import "./christmasPostcard.css";
 import "./baseWallet.css";
-// import "./christmasWithDecorations.css";
 import "./christmasTree.css";
 // export { default as christmasPostcard } from "./images/christmasPostcard.png";
 // export { default as blueOne } from "./images/blueOne.png";
