@@ -23,7 +23,7 @@ class WalletInfo extends Component {
       style: default_image.style,
       name: default_image.name,
       label_theme: default_image.label,
-      themeName: "paperLightBlue",
+      themeName: "lightBlue",
       showInsert: false
     };
   }
