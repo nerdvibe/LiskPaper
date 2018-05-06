@@ -39,7 +39,8 @@ class InfoBox extends Component {
             This is a real wallet. You can use it for yourself in order to store
             your Lisk or you top it up and gift it to a friend.<br />
             Now you can access this wallet with Lisk Nano by entering the 12
-            words passphrase. The balance of this wallet is ________________ Lisk. You will need to send some Lisk to the address{" "}
+            words passphrase. The balance of this wallet is ________________
+            Lisk. You will need to send some Lisk to the address{" "}
             {wallet.address} (e.g. from an exchange) in order to make it show in
             the block explorer.
             <br />

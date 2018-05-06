@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./bulma.css";
 import "./App.css";
 
-import Head from "./views/base/Header";
-import Footer from "./views/base/Footer";
-import Landing from "./views/Landing";
-import StepOne from "./views/walletgenerator/StepOne";
-import WalletInfo from "./views/walletgenerator/generate/WalletInfo";
-import How from "./views/How";
+import Head from "./modules/base-ui/Header";
+import Footer from "./modules/base-ui/Footer";
+import Landing from "./modules/base-ui/Landing";
+import Wizard from "./modules/walletGenerator/views/Wizard";
+import WalletInfo from "./modules/walletGenerator/views/generate/WalletInfo";
+import How from "./modules/howPage/How";
 import "font-awesome/css/font-awesome.min.css";
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
             <div className="hero-body">
               <Switch>
                 <Route exact path="/" component={Landing} />
-                <Route exact path="/start" component={StepOne} />
+                <Route exact path="/start" component={Wizard} />
                 <Route path="/create-wallet" component={WalletInfo} />
                 <Route path="/how-it-works" component={How} />
                 <Route component={Landing} />
