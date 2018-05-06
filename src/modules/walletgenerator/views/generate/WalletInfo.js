@@ -14,7 +14,7 @@ class WalletInfo extends Component {
   constructor(props) {
     super(props);
 
-    const default_image = themes.paperLightBlue;
+    const default_image = themes.lightBlue;
     this.query = parse(this.props.location.search.substr(1));
 
     this.state = {
