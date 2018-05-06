@@ -14,11 +14,11 @@ class Footer extends Component {
               carbonara
             </a>{" "}
             and{" "}
-            {window && window.process && !window.process.type
-              ? <a href="http://liskelite.com" className="footer-link">
+            {window && window.process && window.process.type
+              ? <strong>Lisk Elite</strong>
+              : <a href="http://liskelite.com" className="footer-link">
                   Lisk Elite
-                </a>
-              : <strong>Lisk Elite</strong>}.{" "}
+                </a>}.{" "}
             <span className="hide-print">
               Vote Lisk Elite to earn the biggest rewards weekly.
             </span>

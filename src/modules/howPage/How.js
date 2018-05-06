@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AnimationsWrapper from "../lib/AnimationWrapper";
+import AnimationsWrapper from "../base-ui/AnimationWrapper";
 
 class How extends Component {
   render() {
@@ -41,8 +41,8 @@ class How extends Component {
               </p>
               <p>
                 Another use case of a paper wallet is to gift it to friends for
-                example for Christmas. Let's say you want to give 10 Lisk to
-                John, but John doesn't know how to create a Lisk wallet. You
+                example for Christmas. Let&apos;s say you want to give 10 Lisk to
+                John, but John doesn&apos;t know how to create a Lisk wallet. You
                 could create a Lisk Paper Wallet for John, send some Lisk to the
                 generated address and then gift the paper wallet to him.
               </p>
@@ -50,21 +50,34 @@ class How extends Component {
                 How do I generate the paper wallet offline?
               </h2>
               <p>
-                The code of <a href="https://liskpaper.com" className="underlined">liskpaper.com</a> is open source. You can improve it and
-                submit a PR to the repository. If you need assistance, feel free
-                to contact carbonara on the Lisk.chat.
+                The code of{" "}
+                <a href="https://liskpaper.com" className="underlined">
+                  liskpaper.com
+                </a>{" "}
+                is open source. You can improve it and submit a PR to the
+                repository. If you need assistance, feel free to contact
+                carbonara on the Lisk.chat.
               </p>
               <p>
-                The safest way to generate a wallet is  <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0" className="underlined">to download the
-                application here</a>, transfer it into an usb drive, start an
-                offline linux distribution, and open the index.html.
+                The safest way to generate a wallet is{" "}
+                <a
+                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
+                  className="underlined"
+                >
+                  to download the application here
+                </a>, transfer it into an usb drive, start an offline linux
+                distribution, and open the index.html.
               </p>
               <p>
-                If you don't want to bother to use an offline linux
+                If you don&apos;t want to bother to use an offline linux
                 distribution, you can just download{" "}
-                <a href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0" className="underlined">liskpaper.zip
-                  from here</a>, unzip it and execute the index.html. There is no need
-                to be connected to internet while running the liskpaper app.
+                <a
+                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
+                  className="underlined"
+                >
+                  liskpaper.zip from here
+                </a>, unzip it and execute the index.html. There is no need to
+                be connected to internet while running the liskpaper app.
               </p>
             </div>
           </div>

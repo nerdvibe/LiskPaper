@@ -2,15 +2,10 @@ import React, { Component } from "react";
 import Toolbar from "./Toolbar";
 import WalletVisualizer from "./WalletVisualizer";
 import InfoBox from "./InfoBox";
-import AnimationsWrapper from "../../../lib/AnimationWrapper";
-
+import AnimationsWrapper from "../../../base-ui/AnimationWrapper";
 import { parse } from "qs";
-
-import { generateWallet } from "../../../logic/wallets";
-// import * as images from "./styles/index";
-
+import { generateWallet } from "../../logic/wallets";
 import "./styles/index";
-
 import themes from "./styles/index";
 
 class WalletInfo extends Component {
@@ -19,7 +14,7 @@ class WalletInfo extends Component {
   constructor(props) {
     super(props);
 
-    const default_image = themes.paperLightBlue;
+    const default_image = themes.lightBlue;
     this.query = parse(this.props.location.search.substr(1));
 
     this.state = {

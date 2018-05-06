@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Offline, Online } from "react-detect-offline";
-import AnimationsWrapper from "../lib/AnimationWrapper";
+import AnimationsWrapper from "./AnimationWrapper";
 
 class App extends Component {
   render() {
@@ -27,7 +27,7 @@ class App extends Component {
             ? ""
             : <Online>
                 <a
-                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0"
+                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
                   className="button is-primary"
                 >
                   <i className="fa fa-download fa-fw" aria-hidden="true" />{" "}

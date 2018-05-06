@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
-import EasyTransition from 'react-easy-transition';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import EasyTransition from "react-easy-transition";
+import PropTypes from "prop-types";
 
 class AnimationsWrapper extends Component {
-
   render() {
-
     return (
       <EasyTransition
         path={this.context.router.route.location.pathname}
@@ -16,12 +14,11 @@ class AnimationsWrapper extends Component {
         {this.props.children}
       </EasyTransition>
     );
-
   }
-};
+}
 
 export default AnimationsWrapper;
 
 AnimationsWrapper.contextTypes = {
-  router: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired
 };
