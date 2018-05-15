@@ -41,10 +41,10 @@ class How extends Component {
               </p>
               <p>
                 Another use case of a paper wallet is to gift it to friends for
-                example for Christmas. Let&apos;s say you want to give 10 Lisk to
-                John, but John doesn&apos;t know how to create a Lisk wallet. You
-                could create a Lisk Paper Wallet for John, send some Lisk to the
-                generated address and then gift the paper wallet to him.
+                example for Christmas. Let&apos;s say you want to give 10 Lisk
+                to John, but John doesn&apos;t know how to create a Lisk wallet.
+                You could create a Lisk Paper Wallet for John, send some Lisk to
+                the generated address and then gift the paper wallet to him.
               </p>
               <h2 className="title top35">
                 How do I generate the paper wallet offline?

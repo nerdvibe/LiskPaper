@@ -26,16 +26,14 @@ class WalletInfo extends Component {
       label_theme: default_image.label,
       themeName: "lightBlue",
       showInsert: false,
-      current: 'generate'
+      current: "generate"
     };
   }
 
   componentWillMount() {
-
-    if(this.query.blueprint || this.query.created)
-      this.setState({ current: 'show' });
-    else
-      this.setState({ current: 'generate' });
+    if (this.query.blueprint || this.query.created)
+      this.setState({ current: "show" });
+    else this.setState({ current: "generate" });
 
     if (this.query.blueprint) return;
     this.query.created
@@ -45,7 +43,7 @@ class WalletInfo extends Component {
 
   createWallet = () => {
     this.setState({
-      current: 'generate',
+      current: "generate",
       wallet: {}
     });
   };
@@ -81,10 +79,9 @@ class WalletInfo extends Component {
     generateWallet(passphrase, wallet => {
       this.setState({
         wallet,
-        current: 'show'
+        current: "show"
       });
     });
-
   };
 
   setPassphrase = e => {
@@ -101,38 +98,41 @@ class WalletInfo extends Component {
     const templates = {};
     const { current } = this.state;
 
-    templates.generate = <PassphraseGenerator
-      setPassphraseFromGenerator={this.setPassphraseFromGenerator.bind(this)} />;
+    templates.generate = (
+      <PassphraseGenerator
+        setPassphraseFromGenerator={this.setPassphraseFromGenerator.bind(this)}
+      />
+    );
 
-    templates.show = <AnimationsWrapper>
-      <div className={this.state.style + " image-wrapper"}>
-        <WalletVisualizer
-          wallet={wallet}
-          message={this.state.message}
-          image={this.state.image}
-        />
+    templates.show = (
+      <AnimationsWrapper>
+        <div className={this.state.style + " image-wrapper"}>
+          <WalletVisualizer
+            wallet={wallet}
+            message={this.state.message}
+            image={this.state.image}
+          />
 
-        <Toolbar
-          wallet={wallet}
-          changeTheme={this.changeTheme}
-          createWallet={this.createWallet}
-          setMessage={this.setMessage}
-          max_message={this.state.max_message}
-          themeName={this.state.themeName}
-          themes={themes}
-          showInsert={this.state.showInsert}
-          setPassphrase={this.setPassphrase}
-          setAddress={this.setAddress}
-        />
+          <Toolbar
+            wallet={wallet}
+            changeTheme={this.changeTheme}
+            createWallet={this.createWallet}
+            setMessage={this.setMessage}
+            max_message={this.state.max_message}
+            themeName={this.state.themeName}
+            themes={themes}
+            showInsert={this.state.showInsert}
+            setPassphrase={this.setPassphrase}
+            setAddress={this.setAddress}
+          />
 
-        <InfoBox wallet={wallet} />
-      </div>
-    </AnimationsWrapper>;
+          <InfoBox wallet={wallet} />
+        </div>
+      </AnimationsWrapper>
+    );
 
     return (
-      <div className="container has-text-centered">
-        { templates[current] }
-      </div>
+      <div className="container has-text-centered">{templates[current]}</div>
     );
   }
 }
