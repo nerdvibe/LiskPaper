@@ -8,13 +8,12 @@ const buffLength = 8;
 
 //Next line is because of this: https://github.com/bitpay/bitcore-lib/issues/153
 if (global._bitcore) delete global._bitcore;
-const mnemonic = require('bitcore-mnemonic');
+const mnemonic = require("bitcore-mnemonic");
 
 export const generateWallet = (passphrase, cb) => {
   let onNaclReady = (nacl, passphrase) => {
     let mnemonicToData = passphrase => {
-
-      if(!passphrase || (passphrase && !isValidPassphrase(passphrase))) {
+      if (!passphrase || (passphrase && !isValidPassphrase(passphrase))) {
         return { error: true, reason: "Passphrase not valid" };
       }
 
@@ -28,7 +27,10 @@ export const generateWallet = (passphrase, cb) => {
       let privateKey = new Buffer(kp.signSk);
 
       let getAddress = function(publicKey) {
-        let hash = crypto.createHash("sha256").update(publicKey).digest();
+        let hash = crypto
+          .createHash("sha256")
+          .update(publicKey)
+          .digest();
         let buff = new Buffer(buffLength);
 
         for (let i = 0; i < buffLength; i++) {
@@ -63,7 +65,8 @@ export const generateWallet = (passphrase, cb) => {
  * @param {Number|String} value
  * @returns {Array} - Array of 16 'value's
  */
-export const emptyByte = (value) => Array.apply(null, Array(16)).map(item => value);
+export const emptyByte = value =>
+  Array.apply(null, Array(16)).map(item => value);
 
 /**
  * fills the left side of str with a given padding string to meet the required length
@@ -85,12 +88,12 @@ const leftPadd = (str, pad, length) => {
  */
 const init = (rand = Math.random()) => {
   let step = (160 + Math.floor(rand * 160)) / 100;
-  step = step >= 0.01 ? step : 0.1 + (step * 5);
+  step = step >= 0.01 ? step : 0.1 + step * 5;
   return {
     step,
     percentage: 0,
-    seed: emptyByte('00'),
-    byte: emptyByte(0),
+    seed: emptyByte("00"),
+    byte: emptyByte(0)
   };
 };
 
@@ -110,20 +113,28 @@ const init = (rand = Math.random()) => {
  *
  * @returns {number[]} The input array whose member is pos is set
  */
-export const generateSeed = ({ byte, seed, percentage, step } = init(), rand = Math.random()) => {
-  const available = byte.map((bit, index) => (!bit ? index : null)).filter(bit => (bit !== null));
-  const seedIndex = (available.length > 0) ?
-    available[parseInt(rand * available.length, 10)] :
-    parseInt(rand * byte.length, 10);
+export const generateSeed = (
+  { byte, seed, percentage, step } = init(),
+  rand = Math.random()
+) => {
+  const available = byte
+    .map((bit, index) => (!bit ? index : null))
+    .filter(bit => bit !== null);
+  const seedIndex =
+    available.length > 0
+      ? available[parseInt(rand * available.length, 10)]
+      : parseInt(rand * byte.length, 10);
 
-  const content = leftPadd(crypto.randomBytes(1)[0].toString(16), '0', 2);
+  const content = leftPadd(crypto.randomBytes(1)[0].toString(16), "0", 2);
 
   return {
-    seed: seed.map((item, idx) => ((idx === seedIndex) ? content : item)),
-    byte: available.length > 0 ? byte.map((item, idx) =>
-      ((idx === seedIndex) ? 1 : item)) : emptyByte(0),
-    percentage: (percentage + step),
-    step,
+    seed: seed.map((item, idx) => (idx === seedIndex ? content : item)),
+    byte:
+      available.length > 0
+        ? byte.map((item, idx) => (idx === seedIndex ? 1 : item))
+        : emptyByte(0),
+    percentage: percentage + step,
+    step
   };
 };
 
@@ -133,7 +144,8 @@ export const generateSeed = ({ byte, seed, percentage, step } = init(), rand = M
  * @param {string[]} seed - An array of 16 hex numbers in string format
  * @returns {string} The generated passphrase
  */
-export const generatePassphrase = ({ seed }) => (new mnemonic(new Buffer(seed.join(''), 'hex'))).toString();
+export const generatePassphrase = ({ seed }) =>
+  new mnemonic(new Buffer(seed.join(""), "hex")).toString();
 
 /**
  * Checks if passphrase is valid using mnemonic
@@ -141,11 +153,13 @@ export const generatePassphrase = ({ seed }) => (new mnemonic(new Buffer(seed.jo
  * @param {string} passphrase
  * @returns {bool} isValidPassphrase
  */
-export const isValidPassphrase = (passphrase) => {
-  const normalizedValue = passphrase.replace(/ +/g, ' ').trim();
+export const isValidPassphrase = passphrase => {
+  const normalizedValue = passphrase.replace(/ +/g, " ").trim();
   let isValid;
   try {
-    isValid = normalizedValue.split(' ').length >= 12 && mnemonic.isValid(normalizedValue);
+    isValid =
+      normalizedValue.split(" ").length >= 12 &&
+      mnemonic.isValid(normalizedValue);
   } catch (e) {
     // If the mnemonic check throws an error, we assume that the
     // passphrase being entered isn't valid
