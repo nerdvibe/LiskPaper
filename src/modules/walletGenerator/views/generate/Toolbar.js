@@ -23,7 +23,8 @@ class Toolbar extends Component {
                   <div className="field">
                     <p className="control">
                       <label htmlFor="message-input">
-                        {" "}<i
+                        {" "}
+                        <i
                           className="fa fa-address-card-o fa-fw"
                           aria-hidden="true"
                         />{" "}
@@ -47,7 +48,8 @@ class Toolbar extends Component {
                   <div className="field">
                     <p className="control">
                       <label htmlFor="message-input">
-                        {" "}<i
+                        {" "}
+                        <i
                           className="fa fa-key fa-fw"
                           aria-hidden="true"
                         />{" "}
@@ -79,7 +81,8 @@ class Toolbar extends Component {
                 <div className="field">
                   <p className="control">
                     <label htmlFor="message-input">
-                      {" "}<i
+                      {" "}
+                      <i
                         className="fa fa-envelope fa-fw"
                         aria-hidden="true"
                       />{" "}
@@ -91,11 +94,13 @@ class Toolbar extends Component {
                       placeholder="Add a message"
                       onChange={e => this.setMessage(e)}
                     />
-                    {this.props.max_message
-                      ? <span className="has-text-warning">
-                          <strong>Maximum length of the message reached</strong>
-                        </span>
-                      : ""}
+                    {this.props.max_message ? (
+                      <span className="has-text-warning">
+                        <strong>Maximum length of the message reached</strong>
+                      </span>
+                    ) : (
+                      ""
+                    )}
                   </p>
                 </div>
               </div>
@@ -109,8 +114,13 @@ class Toolbar extends Component {
                   <select onChange={this.props.changeTheme}>
                     {Object.keys(this.props.themes).map(theme => {
                       return (
-                        <option key={theme} value={theme}>
-                          {" "}{this.props.themes[theme].label}{" "}
+                        <option
+                          key={theme}
+                          value={theme}
+                          selected={this.props.themeName === theme}
+                        >
+                          {" "}
+                          {this.props.themes[theme].label}{" "}
                         </option>
                       );
                     })}

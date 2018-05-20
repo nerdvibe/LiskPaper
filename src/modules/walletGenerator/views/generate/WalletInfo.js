@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Toolbar from "./Toolbar";
 import WalletVisualizer from "./WalletVisualizer";
 import InfoBox from "./InfoBox";
+import PassphraseGenerator from "./PassphraseGenerator";
 import AnimationsWrapper from "../../../base-ui/AnimationWrapper";
 import { parse } from "qs";
 import { generateWallet } from "../../logic/wallets";
@@ -24,11 +25,16 @@ class WalletInfo extends Component {
       name: default_image.name,
       label_theme: default_image.label,
       themeName: "lightBlue",
-      showInsert: false
+      showInsert: false,
+      current: "generate"
     };
   }
 
   componentWillMount() {
+    if (this.query.blueprint || this.query.created)
+      this.setState({ current: "show" });
+    else this.setState({ current: "generate" });
+
     if (this.query.blueprint) return;
     this.query.created
       ? this.setState({ showInsert: true })
@@ -36,10 +42,9 @@ class WalletInfo extends Component {
   }
 
   createWallet = () => {
-    generateWallet(wallet => {
-      this.setState({
-        wallet
-      });
+    this.setState({
+      current: "generate",
+      wallet: {}
     });
   };
 
@@ -68,6 +73,17 @@ class WalletInfo extends Component {
     });
   };
 
+  setPassphraseFromGenerator = passphrase => {
+    let wallet = { ...this.state.wallet };
+    wallet.passphrase = passphrase;
+    generateWallet(passphrase, wallet => {
+      this.setState({
+        wallet,
+        current: "show"
+      });
+    });
+  };
+
   setPassphrase = e => {
     let wallet = { ...this.state.wallet };
     wallet.passphrase = e.target.value;
@@ -79,34 +95,44 @@ class WalletInfo extends Component {
 
   render() {
     let wallet = { ...this.state.wallet };
+    const templates = {};
+    const { current } = this.state;
+
+    templates.generate = (
+      <PassphraseGenerator
+        setPassphraseFromGenerator={this.setPassphraseFromGenerator.bind(this)}
+      />
+    );
+
+    templates.show = (
+      <AnimationsWrapper>
+        <div className={this.state.style + " image-wrapper"}>
+          <WalletVisualizer
+            wallet={wallet}
+            message={this.state.message}
+            image={this.state.image}
+          />
+
+          <Toolbar
+            wallet={wallet}
+            changeTheme={this.changeTheme}
+            createWallet={this.createWallet}
+            setMessage={this.setMessage}
+            max_message={this.state.max_message}
+            themeName={this.state.themeName}
+            themes={themes}
+            showInsert={this.state.showInsert}
+            setPassphrase={this.setPassphrase}
+            setAddress={this.setAddress}
+          />
+
+          <InfoBox wallet={wallet} />
+        </div>
+      </AnimationsWrapper>
+    );
 
     return (
-      <div className="container has-text-centered">
-        <AnimationsWrapper>
-          <div className={this.state.style + " image-wrapper"}>
-            <WalletVisualizer
-              wallet={wallet}
-              message={this.state.message}
-              image={this.state.image}
-            />
-
-            <Toolbar
-              wallet={wallet}
-              changeTheme={this.changeTheme}
-              createWallet={this.createWallet}
-              setMessage={this.setMessage}
-              max_message={this.state.max_message}
-              themeName={this.state.themeName}
-              themes={themes}
-              showInsert={this.state.showInsert}
-              setPassphrase={this.setPassphrase}
-              setAddress={this.setAddress}
-            />
-
-            <InfoBox wallet={wallet} />
-          </div>
-        </AnimationsWrapper>
-      </div>
+      <div className="container has-text-centered">{templates[current]}</div>
     );
   }
 }

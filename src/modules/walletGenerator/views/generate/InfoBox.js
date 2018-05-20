@@ -6,7 +6,8 @@ class InfoBox extends Component {
       return (
         <div className="notification is-warning has-text-left info-box extra-details">
           <h1 className="title is-5 has-text-dark title-mod">
-            {" "}Extra details regarding this wallet{" "}
+            {" "}
+            Extra details regarding this wallet{" "}
           </h1>
 
           <p>
