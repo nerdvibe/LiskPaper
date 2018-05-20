@@ -8,6 +8,7 @@
   "homepage": "./",
   "dependencies": {
     "bip39": "^2.4.0",
+    "bitcore-mnemonic": "^1.5.0",
     "browserify-bignum": "1.3.0-2",
     "crypto": "^1.0.1",
     "electron-is-dev": "^0.3.0",
@@ -17,6 +18,7 @@
     "qrcode.react": "^0.7.2",
     "qs": "^6.5.1",
     "react": "^16.1.1",
+    "react-animate-on-change": "^1.0.1",
     "react-detect-offline": "^1.0.6",
     "react-dom": "^16.1.1",
     "react-easy-transition": "^1.2.6",

@@ -23,17 +23,19 @@ class App extends Component {
             <i className="fa fa-question-circle fa-fw" aria-hidden="true" /> How
             it works
           </Link>
-          {window && window.process && window.process.type
-            ? ""
-            : <Online>
-                <a
-                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
-                  className="button is-primary"
-                >
-                  <i className="fa fa-download fa-fw" aria-hidden="true" />{" "}
-                  Download offline version
-                </a>
-              </Online>}
+          {window && window.process && window.process.type ? (
+            ""
+          ) : (
+            <Online>
+              <a
+                href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
+                className="button is-primary"
+              >
+                <i className="fa fa-download fa-fw" aria-hidden="true" />{" "}
+                Download offline version
+              </a>
+            </Online>
+          )}
         </AnimationsWrapper>
       </div>
     );
