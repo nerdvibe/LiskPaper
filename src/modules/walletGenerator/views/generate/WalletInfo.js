@@ -132,7 +132,9 @@ class WalletInfo extends Component {
     );
 
     return (
-      <div className="container has-text-centered">{templates[current]}</div>
+      <div className="container has-text-centered">
+        {templates[current]}
+      </div>
     );
   }
 }
