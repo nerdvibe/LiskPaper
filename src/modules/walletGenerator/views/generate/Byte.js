@@ -9,7 +9,9 @@ class Byte extends Component {
         baseClassName="stable"
         animationClassName="bouncing"
       >
-        <span className="byte">{this.props.value}</span>
+        <span className="byte">
+          {this.props.value}
+        </span>
       </AnimateOnChange>
     );
   }

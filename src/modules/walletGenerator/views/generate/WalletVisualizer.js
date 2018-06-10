@@ -17,15 +17,23 @@ class WalletVisualizer extends Component {
       <div className="image">
         <img src={this.props.image} alt="" className="" />
         <p className="text-over-address is-size-4 has-text-dark">
-          <strong>{wallet.address || ""}</strong>
+          <strong>
+            {wallet.address || ""}
+          </strong>
         </p>
         <p className="text-over-passphrase is-size-4 has-text-dark">
-          <strong>{wallet.passphrase || ""}</strong>
+          <strong>
+            {wallet.passphrase || ""}
+          </strong>
         </p>
         <p className="text-over-message is-size-4 has-text-dark">
-          <strong>{this.props.message || ""}</strong>
+          <strong>
+            {this.props.message || ""}
+          </strong>
         </p>
-        <span className="qr-code">{this.renderQR(wallet)}</span>
+        <span className="qr-code">
+          {this.renderQR(wallet)}
+        </span>
       </div>
     );
   }

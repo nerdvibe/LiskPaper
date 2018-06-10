@@ -94,25 +94,22 @@ class PassphraseGenerator extends Component {
       <div>
         <div className="columns">
           <div className="column is-8 is-offset-2">
-            {isTouch ? (
-              <div>
-                <p className="title-seed-message">
-                  Enter text below to generate random bytes
-                </p>
-                <input
-                  className="input message-input"
-                  type="text"
-                  placeholder="Enter random text"
-                  onChange={event =>
-                    this.seedGeneratorBoundToThis(event.target.value)
-                  }
-                />
-              </div>
-            ) : (
-              <p className="title-seed-message">
-                Move your mouse to generate random bytes
-              </p>
-            )}
+            {isTouch
+              ? <div>
+                  <p className="title-seed-message">
+                    Enter text below to generate random bytes
+                  </p>
+                  <input
+                    className="input message-input"
+                    type="text"
+                    placeholder="Enter random text"
+                    onChange={event =>
+                      this.seedGeneratorBoundToThis(event.target.value)}
+                  />
+                </div>
+              : <p className="title-seed-message">
+                  Move your mouse to generate random bytes
+                </p>}
           </div>
         </div>
         <div className="columns">
@@ -126,14 +123,14 @@ class PassphraseGenerator extends Component {
         </div>
         <div className="columns">
           <div className="column is-8 is-offset-2">
-            {(this.state.data ? this.state.data.seed : this.state.zeroSeed).map(
-              (byte, index) => (
-                <Byte
-                  value={byte}
-                  key={index}
-                  diff={this.state.seedDiff.indexOf(index) >= 0}
-                />
-              )
+            {(this.state.data
+              ? this.state.data.seed
+              : this.state.zeroSeed).map((byte, index) =>
+              <Byte
+                value={byte}
+                key={index}
+                diff={this.state.seedDiff.indexOf(index) >= 0}
+              />
             )}
           </div>
         </div>

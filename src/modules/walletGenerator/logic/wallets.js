@@ -27,10 +27,7 @@ export const generateWallet = (passphrase, cb) => {
       let privateKey = new Buffer(kp.signSk);
 
       let getAddress = function(publicKey) {
-        let hash = crypto
-          .createHash("sha256")
-          .update(publicKey)
-          .digest();
+        let hash = crypto.createHash("sha256").update(publicKey).digest();
         let buff = new Buffer(buffLength);
 
         for (let i = 0; i < buffLength; i++) {
