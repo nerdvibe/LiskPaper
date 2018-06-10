@@ -52,8 +52,8 @@ class How extends Component {
               <p>
                 No, liskpaper.com is running only in your browser. This means
                 that when you visit liskpaper.com you are downloading the
-                application in your browser and is running it locally. No data is
-                transmitted to any server and there is no tracking/analytics
+                application in your browser and is running it locally. No data
+                is transmitted to any server and there is no tracking/analytics
                 software in place. In order to verify this, you can analyze on{" "}
                 <a
                   href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
