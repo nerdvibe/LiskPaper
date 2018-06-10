@@ -32,13 +32,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-pack": "build --em.main=build/electron.js --mac --windows --linux",
+    "electron-pack": "build -c.extraMetadata.main=build/electron.js --mac --windows --linux",
     "preelectron-pack": "yarn build"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "electron": "^1.7.9",
-    "electron-builder": "^19.47.1",
+    "electron": "^2.0.2",
+    "electron-builder": "20.15.1",
     "wait-on": "^2.0.2"
   },
   "build": {
