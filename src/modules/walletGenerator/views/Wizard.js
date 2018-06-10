@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import AnimationsWrapper from "../../lib/AnimationWrapper";
+import AnimationsWrapper from "../../base-ui/AnimationWrapper";
 
-class StepOne extends Component {
+class Wizard extends Component {
   render() {
     return (
       <div className="container has-text-centered">
         <AnimationsWrapper>
           <p className="title">
-            All right! Let's create a paper wallet. <br />How do do you want to
-            create a paper wallet?
+            All right! Let&apos;s create a paper wallet. <br />How do do you
+            want to create a paper wallet?
           </p>
           <Link to="/create-wallet" className="button is-success">
             Generate one from scratch
@@ -29,4 +29,4 @@ class StepOne extends Component {
   }
 }
 
-export default StepOne;
+export default Wizard;

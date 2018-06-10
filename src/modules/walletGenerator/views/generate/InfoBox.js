@@ -39,7 +39,8 @@ class InfoBox extends Component {
             This is a real wallet. You can use it for yourself in order to store
             your Lisk or you top it up and gift it to a friend.<br />
             Now you can access this wallet with Lisk Nano by entering the 12
-            words passphrase. The balance of this wallet is ________________ Lisk. You will need to send some Lisk to the address{" "}
+            words passphrase. The balance of this wallet is ________________
+            Lisk. You will need to send some Lisk to the address{" "}
             {wallet.address} (e.g. from an exchange) in order to make it show in
             the block explorer.
             <br />
@@ -53,6 +54,12 @@ class InfoBox extends Component {
             <br />
             Now you can print this wallet, save it as pdf and store it for
             yourself or eventually gift it to one of your friends.
+            <br />
+            <br />
+            For security reasons, you should initialize the wallet. A wallet is
+            initialized after the first outgoing transaction. You can create
+            your first outgoing transaction of 0.1 LSK and address it to
+            yourself.
             <br />
             <br />
           </p>

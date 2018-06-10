@@ -36,6 +36,10 @@ The safest way to generate a wallet is to [download the application here](https:
 
 If you don't want to bother to use an offline linux distribution, you can just download [liskpaper.zip from here](https://github.com/xunga/LiskPaper/releases/tag/1.0.0), unzip it and execute the index.html. There is no need to be connected to internet while running the liskpaper app.
 
+## Do you want to propose a new design for the wallets?
+
+Awesome! Let's discuss about the new design by opening a new issue on Github.
+
 ## Disclaimer
 
 By using this software you accept the terms and conditions. This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.

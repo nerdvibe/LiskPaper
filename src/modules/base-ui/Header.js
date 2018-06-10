@@ -33,15 +33,18 @@ class Head extends Component {
                       <strong>Offline</strong>
                     </p>
                   </Offline>
-                  {!window && window.process && window.process.type
-                    ? <Online>
-                        <Link to="https://github.com/xunga/LiskPaper/releases/tag/1.0.0" className="button is-info is-inverted">
-                          <span>Download and use it offline</span>
-                        </Link>
-                      </Online>
-                    : <p className="has-text-success">
+                  {window && window.process && window.process.type
+                    ? <p className="has-text-success">
                         <strong>Online</strong>
-                      </p>}
+                      </p>
+                    : <Online>
+                        <a
+                          href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
+                          className="button is-info is-inverted"
+                        >
+                          <span>Download and use it offline</span>
+                        </a>
+                      </Online>}
                 </span>
               </div>
             </div>

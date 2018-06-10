@@ -109,7 +109,11 @@ class Toolbar extends Component {
                   <select onChange={this.props.changeTheme}>
                     {Object.keys(this.props.themes).map(theme => {
                       return (
-                        <option key={theme} value={theme}>
+                        <option
+                          key={theme}
+                          value={theme}
+                          selected={this.props.themeName === theme}
+                        >
                           {" "}{this.props.themes[theme].label}{" "}
                         </option>
                       );
