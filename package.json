@@ -1,9 +1,9 @@
 {
   "name": "liskpaper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "main": "public/electron.js",
-  "author": "Carbonara & Lisk Elite",
+  "author": "Carbonara",
   "description": "Do you want to store your Lisk safely? Do you want to gift Lisk to somebody? Or maybe you just want to generate an offline wallet for Lisk? liskpaper.com will do it for you! built by Carbonara & Lisk Elite",
   "homepage": "./",
   "dependencies": {
