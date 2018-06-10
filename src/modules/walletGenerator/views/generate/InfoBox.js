@@ -56,6 +56,10 @@ class InfoBox extends Component {
             yourself or eventually gift it to one of your friends.
             <br />
             <br />
+            For security reasons, you should initialize the wallet. A wallet is initialized after the first outgoing transaction.
+            You can create your first outgoing transaction of 0.1 LSK and address it to yourself.
+            <br />
+            <br />
           </p>
         </div>
         {this.renderExtraBox(wallet)}
