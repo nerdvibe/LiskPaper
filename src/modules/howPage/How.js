@@ -47,6 +47,24 @@ class How extends Component {
                 the generated address and then gift the paper wallet to him.
               </p>
               <h2 className="title top35">
+                Is this application communicating with any server?
+              </h2>
+              <p>
+                No, liskpaper.com is running only in your browser. This means
+                that when you visit liskpaper.com you are downloading the
+                application in your browser and is running it locally. No data is
+                transmitted to any server and there is no tracking/analytics
+                software in place. In order to verify this, you can analyze on{" "}
+                <a
+                  href="https://github.com/xunga/LiskPaper/releases/tag/1.0.0"
+                  className="underlined"
+                >
+                  {" "}Github{" "}
+                </a>{" "}
+                the source code. In order to avoid any doubts, downloading the
+                software from Github and running it offline is encouraged.
+              </p>
+              <h2 className="title top35">
                 How do I generate the paper wallet offline?
               </h2>
               <p>
