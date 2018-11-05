@@ -1,0 +1,32 @@
+.footer-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-text {
+  padding-bottom: 20px;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+
+.button {
+  margin: 5px;
+}
+
+.top35 {
+  margin-top: 35px;
+}
+
+.underlined {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media print {
+  .hide-print {
+    display: none;
+  }
+}

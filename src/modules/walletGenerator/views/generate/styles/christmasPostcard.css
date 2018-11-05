@@ -1,0 +1,183 @@
+/*christmasPostcard*/
+.christmasPostcard .image {
+  position: relative;
+  transform: scale(0.5);
+  margin-top: -150px;
+}
+
+.christmasPostcard .tools {
+  margin-top: -228px;
+}
+
+.christmasPostcard .text-over-address {
+  bottom: 372px;
+  left: 271px;
+  font-size: 30px !important;
+}
+
+.christmasPostcard .text-over-passphrase {
+  bottom: 278px;
+  left: 271px;
+  line-height: 1.2;
+  max-width: 580px;
+  text-align: left;
+  font-size: 27px !important;
+}
+.christmasPostcard .text-over-message {
+  bottom: 187px;
+  left: 269px;
+  line-height: 1.2;
+  max-width: 545px;
+  text-align: left;
+  font-size: 27px !important;
+}
+
+.christmasPostcard .qr-code {
+  height: 128px;
+  width: 128px;
+  bottom: 629px;
+  left: 981px;
+}
+
+.christmasPostcard canvas {
+  height: 152px !important;
+  width: 152px !important;
+}
+
+@media print {
+  .christmasPostcard .image {
+    top: 140px;
+    position: relative;
+    /*width: 100%; !* for IE 6 *!*/
+  }
+
+  .christmasPostcard .text-over-address {
+    bottom: 200px;
+    left: 141px;
+    font-size: 20px !important;
+  }
+
+  .christmasPostcard .text-over-passphrase {
+    bottom: 150px;
+    left: 141px;
+    font-size: 13px !important;
+    max-width: 316px;
+  }
+
+  .christmasPostcard .text-over-message {
+    bottom: 100px;
+    left: 146px;
+    font-size: 15px !important;
+    max-width: 316px;
+  }
+
+  .christmasPostcard .qr-code {
+    bottom: 323px;
+    left: 522px;
+    height: 77px;
+    width: 77px;
+  }
+  .christmasPostcard canvas {
+    height: 80px !important;
+    width: 80px !important;
+  }
+
+  .christmasPostcard .notification {
+    transform: scale(.8);
+  }
+  .christmasPostcard .notification-topped {
+    margin-top: 60px;
+    margin-bottom: 0px !important;
+  }
+  .christmasPostcard .extra-details {
+    margin-top: -78px;
+  }
+  .christmasPostcard .infos {
+    margin-top: -75px;
+  }
+}
+
+@media (max-width: 1408px) and (min-width: 1216px) {
+  .christmasPostcard .image {
+    position: relative;
+    transform: scale(0.6);
+    padding-bottom: 65px;
+  }
+
+  .christmasPostcard .text-over-address {
+    bottom: 381px;
+    left: 232px;
+  }
+
+  .christmasPostcard .text-over-passphrase {
+    bottom: 304px;
+    left: 233px;
+    line-height: 1.2;
+    max-width: 564px;
+    text-align: left;
+    font-size: 25px !important;
+  }
+  .christmasPostcard .text-over-message {
+    bottom: 222px;
+    left: 238px;
+    line-height: 1.2;
+    max-width: 615px;
+    text-align: left;
+  }
+
+  .christmasPostcard canvas {
+    height: 124px !important;
+    width: 124px !important;
+  }
+
+  .christmasPostcard .qr-code {
+    height: 124px !important;
+    width: 124px !important;
+    bottom: 586px;
+    left: 844px;
+  }
+}
+
+@media (max-width: 1215px) and (min-width: 1024px) {
+  .christmasPostcard .image {
+    position: relative;
+    transform: scale(0.7);
+    padding-bottom: 140px;
+  }
+
+  .christmasPostcard .text-over-address {
+    bottom: 402px;
+    left: 193px;
+  }
+
+  .christmasPostcard .text-over-passphrase {
+    bottom: 338px;
+    left: 193px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 20px !important;
+    max-width: 448px;
+  }
+  .christmasPostcard .text-over-message {
+    bottom: 276px;
+    left: 193px;
+    line-height: 1.2;
+    max-width: 465px;
+    text-align: left;
+    font-size: 22px !important;
+  }
+
+  .christmasPostcard canvas {
+    height: 90px !important;
+    width: 90px !important;
+  }
+
+  .christmasPostcard .qr-code {
+    bottom: 582px;
+    left: 712px;
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+/*end christmasPostcard*/

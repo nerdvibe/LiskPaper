@@ -1,0 +1,173 @@
+/* baseWallet */
+
+.baseWallet .image {
+  transform: scale(0.7);
+}
+
+.baseWallet .text-over-address {
+  bottom: 281px;
+  left: 201px;
+  font-size: 34px !important;
+}
+
+.baseWallet .text-over-passphrase {
+  bottom: 178px;
+  left: 55px;
+  line-height: 1.2;
+  max-width: 705px;
+  text-align: left;
+}
+.baseWallet .text-over-message {
+  bottom: 68px;
+  left: 53px;
+  line-height: 1.2;
+  max-width: 720px;
+  text-align: left;
+  font-size: 25px !important;
+}
+
+.baseWallet .qr-code {
+  height: 128px;
+  width: 128px;
+  bottom: 229px;
+  left: 932px;
+}
+
+.baseWallet canvas {
+  height: 260px !important;
+  width: 260px !important;
+}
+
+@media print {
+  /*.baseWallet */
+  .baseWallet .image {
+    top: 100px;
+    position: relative;
+    /*width: 100%; !* for IE 6 *!*/
+  }
+
+  .baseWallet .text-over-address {
+    bottom: 152px;
+    left: 99px;
+    font-size: 17px !important;
+  }
+
+  .baseWallet .text-over-passphrase {
+    bottom: 92px;
+    left: 24px;
+    font-size: 15px !important;
+    max-width: 382px;
+  }
+
+  .baseWallet .text-over-message {
+    bottom: 35px;
+    left: 24px;
+    font-size: 15px !important;
+    max-width: 382px;
+  }
+
+  .baseWallet .qr-code {
+    bottom: 105px;
+    left: 499px;
+    height: 77px;
+    width: 77px;
+  }
+  .baseWallet canvas {
+    height: 120px !important;
+    width: 120px !important;
+  }
+
+  .baseWallet .notification {
+    transform: scale(.8);
+  }
+  .baseWallet .notification-topped {
+    margin-top: 60px;
+    margin-bottom: 0px !important;
+  }
+  .baseWallet .extra-details {
+    margin-top: -78px;
+  }
+}
+
+@media (max-width: 1408px) and (min-width: 1216px) {
+  .baseWallet .image {
+    position: relative;
+    transform: scale(0.7);
+  }
+
+  .baseWallet .text-over-address {
+    bottom: 236px;
+    left: 140px;
+  }
+
+  .baseWallet .text-over-passphrase {
+    bottom: 151px;
+    left: 61px;
+    line-height: 1.2;
+    max-width: 602px;
+    text-align: left;
+  }
+  .baseWallet .text-over-message {
+    bottom: 54px;
+    left: 51px;
+    line-height: 1.2;
+    max-width: 601px;
+    text-align: left;
+  }
+
+  .baseWallet canvas {
+    height: 194px !important;
+    width: 194px !important;
+  }
+
+  .baseWallet .qr-code {
+    height: 124px !important;
+    width: 124px !important;
+    bottom: 166px;
+    left: 809px;
+  }
+}
+
+@media (max-width: 1215px) and (min-width: 1024px) {
+  .baseWallet .image {
+    position: relative;
+    transform: scale(0.7);
+  }
+
+  .baseWallet .text-over-address {
+    bottom: 195px;
+    left: 114px;
+    font-size: 29px !important;
+  }
+
+  .baseWallet .text-over-passphrase {
+    bottom: 124px;
+    left: 46px;
+    line-height: 1.1;
+    text-align: left;
+    font-size: 21px !important;
+    max-width: 501px;
+  }
+  .baseWallet .text-over-message {
+    bottom: 45px;
+    left: 50px;
+    line-height: 1.2;
+    max-width: 461px;
+    text-align: left;
+    font-size: 21px !important;
+  }
+
+  .baseWallet canvas {
+    height: 160px !important;
+    width: 160px !important;
+  }
+
+  .baseWallet .qr-code {
+    bottom: 150px;
+    left: 676px;
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+/*end baseWallet*/

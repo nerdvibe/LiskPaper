@@ -1,0 +1,175 @@
+/* christmasTree */
+
+.christmasTree .image {
+  transform: scale(0.7);
+}
+
+.christmasTree .text-over-address {
+  bottom: 281px;
+  left: 201px;
+  font-size: 34px !important;
+}
+
+.christmasTree .text-over-passphrase {
+  bottom: 190px;
+  left: 220px;
+  line-height: 1.2;
+  max-width: 515px;
+  text-align: left;
+}
+.christmasTree .text-over-message {
+  bottom: 92px;
+  left: 220px;
+  line-height: 1.2;
+  max-width: 515px;
+  text-align: left;
+}
+
+.christmasTree .qr-code {
+  height: 128px;
+  width: 128px;
+  bottom: 216px;
+  left: 998px;
+}
+
+.christmasTree canvas {
+  height: 226px !important;
+  width: 226px !important;
+}
+
+@media print {
+  /*.christmasTree */
+  .christmasTree .image {
+    top: 100px;
+    position: relative;
+    /*width: 100%; !* for IE 6 *!*/
+  }
+
+  .christmasTree .text-over-address {
+    bottom: 152px;
+    left: 99px;
+    font-size: 17px !important;
+  }
+
+  .christmasTree .text-over-passphrase {
+    bottom: 100px;
+    left: 120px;
+    font-size: 13px !important;
+    max-width: 280px;
+  }
+
+  .christmasTree .text-over-message {
+    bottom: 46px;
+    left: 103px;
+    font-size: 13px !important;
+    max-width: 340px;
+  }
+
+  .christmasTree .qr-code {
+    bottom: 105px;
+    left: 528px;
+    height: 77px;
+    width: 77px;
+  }
+  .christmasTree canvas {
+    height: 115px !important;
+    width: 115px !important;
+  }
+
+  .christmasTree .notification {
+    transform: scale(.8);
+  }
+  .christmasTree .notification-topped {
+    margin-top: 60px;
+    margin-bottom: 0px !important;
+  }
+  .christmasTree .extra-details {
+    margin-top: -78px;
+  }
+}
+
+@media (max-width: 1408px) and (min-width: 1216px) {
+  .christmasTree .image {
+    position: relative;
+    transform: scale(0.7);
+  }
+
+  .christmasTree .text-over-address {
+    bottom: 240px;
+    left: 151px;
+    font-size: 29px !important;
+  }
+
+  .christmasTree .text-over-passphrase {
+    bottom: 157px;
+    left: 188px;
+    line-height: 1.2;
+    max-width: 464px;
+    text-align: left;
+    font-size: 22px !important;
+  }
+  .christmasTree .text-over-message {
+    bottom: 75px;
+    left: 163px;
+    line-height: 1.2;
+    max-width: 464px;
+    text-align: left;
+    font-size: 22px !important;
+  }
+
+  .christmasTree canvas {
+    height: 184px !important;
+    width: 184px !important;
+  }
+
+  .christmasTree .qr-code {
+    height: 124px !important;
+    width: 124px !important;
+    bottom: 162px;
+    left: 862px;
+  }
+}
+
+@media (max-width: 1215px) and (min-width: 1024px) {
+  .christmasTree .image {
+    position: relative;
+    transform: scale(0.7);
+  }
+
+  .christmasTree .text-over-address {
+    bottom: 197px;
+    left: 125px;
+    font-size: 26px !important;
+  }
+
+  .christmasTree .text-over-passphrase {
+    bottom: 133px;
+    left: 156px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 17px !important;
+    max-width: 408px;
+  }
+  .christmasTree .text-over-message {
+    bottom: 64px;
+    left: 136px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 17px !important;
+    max-width: 408px;
+  }
+
+  .christmasTree canvas {
+    height: 160px !important;
+    width: 160px !important;
+  }
+
+  .christmasTree .qr-code {
+    bottom: 154px;
+    left: 714px;
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+/*end christmasTree*/

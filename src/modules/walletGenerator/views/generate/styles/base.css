@@ -1,0 +1,66 @@
+.info-box p {
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+.bottom20 {
+  margin-bottom: 20px;
+}
+.right10 {
+  margin-right: 10px;
+}
+
+.title-mod {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.tools {
+  margin-top: -40px;
+}
+.tools .button,
+.iconized,
+.select {
+  top: 25px !important;
+}
+.centered {
+  left: 50%;
+  right: auto;
+}
+.text-over-address {
+  position: absolute;
+}
+.text-over-passphrase {
+  position: absolute;
+}
+.text-over-message {
+  position: absolute;
+}
+.qr-code {
+  position: absolute;
+}
+
+.is-second-row {
+  margin-top: 10px;
+  margin-bottom: 33px;
+}
+
+@media print {
+  .image-wrapper {
+    transform: scale(1.2);
+
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
