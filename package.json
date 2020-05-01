@@ -24,7 +24,8 @@
     "react-easy-transition": "^1.2.6",
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +34,9 @@
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-pack": "build -c.extraMetadata.main=build/electron.js --mac --windows --linux",
-    "preelectron-pack": "yarn build"
+    "preelectron-pack": "yarn build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
@@ -50,5 +53,6 @@
     "directories": {
       "buildResources": "assets"
     }
-  }
+  },
+  "snyk": true
 }
