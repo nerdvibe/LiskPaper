@@ -16,7 +16,7 @@
     "js-nacl": "^1.2.2",
     "prop-types": "^15.6.0",
     "qrcode.react": "^0.7.2",
-    "qs": "^6.5.1",
+    "qs": "^6.5.3",
     "react": "^16.1.1",
     "react-animate-on-change": "^1.0.1",
     "react-detect-offline": "^1.0.6",
